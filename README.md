@@ -43,7 +43,7 @@ $ npm install -g truffle
 
 [optional] when you meet 'NPM ERR!', please execute below (macOS).
 
-I'm using Node v16.13.1, Truffle v5.5.10, Solidity ^0.8.0
+(I'm using Node v16.13.1, Truffle v5.5.10, Solidity ^0.8.0)
 
 ```
 nvm install 16.13.1
