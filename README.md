@@ -66,7 +66,7 @@ $ truffle compile
 
 Then you will have to install and run Ganache to run your blockchain locally:
 
-https://www.trufflesuite.com/ganache
+[ganache download](https://www.trufflesuite.com/ganache){:target="_blank"}
 
 Then, the tests that validate your solution can be executed by runing the following
 command:
