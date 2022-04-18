@@ -33,19 +33,22 @@ Run the following command in your terminal after cloning the main repo:
 $ npm install
 ```
 
-[optional] when you meet 'gyp ERR!', please execute below.
-```
-sudo rm -rf /Library/Developer/CommandLineTools
-xcode-select --install
-xcode-select --print-path
-```
 
 
 Then, you will need to install Truffle globally by running the following command int your terminal:
 
 ```
-$ npm install -g truffle
+$ npm install -g truffle@4.1.17
 ```
+
+[optional] when you meet 'NPM ERR!', please execute below (macOS).
+```
+snpm cache clean --force
+npm uninstall -g truffle@4.1.17 
+npm install -g truffle 
+```
+
+
 
 ### 3. Running the Tests
 
