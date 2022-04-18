@@ -33,6 +33,14 @@ Run the following command in your terminal after cloning the main repo:
 $ npm install
 ```
 
+[optional] when you meet 'gyp ERR!', please execute below.
+```
+sudo rm -rf /Library/Developer/CommandLineTools
+xcode-select --install
+xcode-select --print-path
+```
+
+
 Then, you will need to install Truffle globally by running the following command int your terminal:
 
 ```
