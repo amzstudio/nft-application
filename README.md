@@ -52,21 +52,19 @@ npm uninstall -g truffle
 npm install -g truffle 
 ```
 
+### 3. Installing Ganache (TestBed)
+Then you will have to install and run Ganache to run your blockchain locally:
+
+https://www.trufflesuite.com/ganache
 
 
-### 3. Running the Tests
+### 4. Deply SmartContract with Truffle
 
 First, you will have to compile the smart contracts by running the following command in your terminal:
 
 ```
 $ truffle compile
 ```
-
-### 4. Installing Ganache (TestBed)
-
-Then you will have to install and run Ganache to run your blockchain locally:
-
-https://www.trufflesuite.com/ganache 
 
 Then, the tests that validate your solution can be executed by runing the following
 command:
@@ -75,15 +73,13 @@ command:
 $ truffle test
 ```
 
-### 4. Deployment on Local Blockchain
-
 Deploy the contracts on your Ganache local blockchain by running the following command:
 
 ```
 $ truffle migrate
 ```
 
-### 5. Opening the User Interface
+### 5. Installing User Wallet (Metamask)
 
 First of all, it is required to install Metamask wallet as a browser extension: https://metamask.io/
 
@@ -94,13 +90,14 @@ Then you should configure Metamask to connect to your local blockchain run by Ga
 - Configure your private network by adding `http://localhost:7545` on the URL and `1337` as a chain ID.
 - Import the first Ganache Account to Metamask by copying the Account Private Key from Ganache and pasting it on Metamask
 
-Finally you just need to run the following command in your terminal to open the User Interface:
+### 6. Opening the User Interface
+Finally, you just need to run the following command in your terminal to open the User Interface:
 
 ```
 $ npm start
 ```
 
-### 6. Deployment on Public Network
+### 7. Deployment on Public Network
 
 In order to deploy your smart contract, you must create your .env file and specify:
 
