@@ -38,13 +38,16 @@ $ npm install
 Then, you will need to install Truffle globally by running the following command int your terminal:
 
 ```
-$ npm install -g truffle@4.1.17
+$ npm install -g truffle 
 ```
 
 [optional] when you meet 'NPM ERR!', please execute below (macOS).
+I'm using Node v16.13.1, Truffle v5.5.10, Solidity ^0.8.0
+
 ```
-snpm cache clean --force
-npm uninstall -g truffle@4.1.17 
+nvm install 16.13.1
+npm cache clean --force
+npm uninstall -g truffle
 npm install -g truffle 
 ```
 
@@ -57,6 +60,8 @@ First, you will have to compile the smart contracts by running the following com
 ```
 $ truffle compile
 ```
+
+### 4. Installing Ganache (TestBed)
 
 Then you will have to install and run Ganache to run your blockchain locally:
 
