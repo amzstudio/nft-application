@@ -17,9 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### 1. The repository
 
-First, you will need to `clone` or `fork` the repository into your Github account:
-
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+First, you will need to `clone` the repository into your Github account:
 
 ```
 $ git clone https://github.com/amzstudio/nft-application.git
