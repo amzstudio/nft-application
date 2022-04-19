@@ -52,7 +52,7 @@ npm uninstall -g truffle
 npm install -g truffle 
 ```
 
-### 3. Installing Ganache (TestBed)
+### 3. Installing Ganache (Ethereum TestBed)
 Then you will have to install and run Ganache to run your blockchain locally:
 
 https://www.trufflesuite.com/ganache
