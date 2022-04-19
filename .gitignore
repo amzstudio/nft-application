@@ -1,7 +1,8 @@
 # NFT Application by Hyeyop
 node_modules/
 .idea/
-ipfs-app/
+ipfs-app/node_modules
+ipfs-app/package-lock.json
 package-lock.json
 
 # Default ignored files
