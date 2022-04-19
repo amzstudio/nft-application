@@ -46,7 +46,7 @@ $ npm install -g truffle
 (I'm using Node v16.14.2, Truffle v5.5.10, Solidity ^0.8.0)
 
 ```
-nvm use 16.14.2
+nvm install 16.14.2
 npm cache clean --force
 npm uninstall -g truffle
 npm install -g truffle 
