@@ -43,10 +43,10 @@ $ npm install -g truffle
 
 [optional] when you meet 'NPM ERR!', please execute below (macOS).
 
-(I'm using Node v16.13.1, Truffle v5.5.10, Solidity ^0.8.0)
+(I'm using Node v16.14.2, Truffle v5.5.10, Solidity ^0.8.0)
 
 ```
-nvm install 16.13.1
+nvm use 16.14.2
 npm cache clean --force
 npm uninstall -g truffle
 npm install -g truffle 
@@ -90,14 +90,25 @@ Then you should configure Metamask to connect to your local blockchain run by Ga
 - Configure your private network by adding `http://localhost:7545` on the URL and `1337` as a chain ID.
 - Import the first Ganache Account to Metamask by copying the Account Private Key from Ganache and pasting it on Metamask
 
-### 6. Opening the User Interface
+
+### 6. Installing IPFS 
+It's almost over. You need to install IPFS, a distributed file storage locally:
+
+https://docs.ipfs.io/install/command-line/#official-distributions
+
+```
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
+$ ipfs deamon
+```
+
+### 7. Opening the User Interface
 Finally, you just need to run the following command in your terminal to open the User Interface:
 
 ```
 $ npm start
 ```
 
-### 7. Deployment on Public Network
+### 8. Deployment on Public Network
 
 In order to deploy your smart contract, you must create your .env file and specify:
 
