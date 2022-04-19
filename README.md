@@ -83,7 +83,9 @@ $ truffle migrate
 
 ### 5. Installing User Wallet (Metamask)
 
-First of all, it is required to install Metamask wallet as a browser extension: https://metamask.io/
+First of all, it is required to install Metamask wallet as a browser extension:
+
+https://metamask.io/
 
 Then you should configure Metamask to connect to your local blockchain run by Ganache. This requires the following:
 - Open Metamask
