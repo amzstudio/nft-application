@@ -4,7 +4,7 @@
 
 This is an open decentralized NFT Marketplace built with smart contracts powered by Ethereum. It basically consists in an open platform where each user can mint his own NFT and expose it on a marketplace.
 
-![NFT_MARKETPLACE](img/nft_marketplace.png){: width="80%" height="80%"}
+
 
 ## Table of Contents
 
@@ -160,7 +160,7 @@ The user can access the application via web-browser, and he must have the Metama
 
 ### NFT Marketplace features
 
-![Layout](img/layout.PNG)
+![NFT_MARKETPLACE](img/nft_marketplace.png)
 
 The user can perform the following actions on this NFT Marketplace:
 
@@ -194,4 +194,4 @@ If a user sold an NFT, he can claim his funds by clicking the button in the top-
 - [MetaMask](https://metamask.io/)
 - [IPFS](https://ipfs.io/)
 
-(orgin : https://github.com/miquelTC/nft-marketplac)
+(* orginal github : https://github.com/miquelTC/nft-marketplac)
