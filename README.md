@@ -26,7 +26,7 @@ $ git clone https://github.com/amzstudio/nft-application.git
 
 ### 2. Installing Prerequisites
 
-First, you will need to install the dependencies with: `npm install`.
+First, you will need to install the dependencies.
 
 Run the following command in your terminal after cloning the main repo:
 
@@ -42,7 +42,7 @@ Then, you will need to install Truffle globally by running the following command
 $ npm install -g truffle 
 ```
 
-[optional] when you meet 'NPM ERR!', please execute below (macOS).
+[optional] when you meet 'NPM ERR!', please execute below.
 
 (I'm using Node v16.14.2, Truffle v5.5.10, Solidity ^0.8.0)
 
