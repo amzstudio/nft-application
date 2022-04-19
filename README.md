@@ -58,6 +58,7 @@ Then you will have to install and run Ganache to run your blockchain locally:
 https://www.trufflesuite.com/ganache
 
 
+
 ### 4. Deply SmartContract with Truffle
 
 First, you will have to compile the smart contracts by running the following command in your terminal:
