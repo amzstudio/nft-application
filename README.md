@@ -96,7 +96,7 @@ Then you should configure Metamask to connect to your local blockchain run by Ga
 ### 6. Installing Decentralized Storage (IPFS)
 It's almost over. You need to install IPFS, a distributed file storage locally:
 
-https://docs.ipfs.io/install/command-line/#official-distributions
+https://docs.ipfs.io/install/command-line/
 
 ```
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
