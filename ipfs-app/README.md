@@ -31,7 +31,7 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://yoursit
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["POST", "PUT", "GET", "DELETE"]'
 ```
-# [Appendix 2]if you want to make sure "restart" your daemon :
+### [Appendix 2] if you want to make sure "restart" your daemon :
 ```
 ipfs shutdown
 screen -dmS IPFS ipfs daemon
