@@ -91,7 +91,7 @@ Then you should configure Metamask to connect to your local blockchain run by Ga
 - Import the first Ganache Account to Metamask by copying the Account Private Key from Ganache and pasting it on Metamask
 
 
-### 6. Installing IPFS 
+### 6. Installing Decentralized Storage (IPFS)
 It's almost over. You need to install IPFS, a distributed file storage locally:
 
 https://docs.ipfs.io/install/command-line/#official-distributions
@@ -118,7 +118,9 @@ In order to deploy your smart contract, you must create your .env file and speci
 Then, you will need to run the following command (let's use the testnet Ropsten in this example, remember to request some Ether for your account using a faucet):
 
 ```
-$ truffle migrate --network ropsten
+$ truffle migrate --network ropsten 
+or
+$ truffle migrate --network aws_managed_blockchain
 ```
 
 Finally you can run the following command to generate the build artifacts of your User Interface and then deploy to your favourite host:
@@ -187,4 +189,5 @@ If a user sold an NFT, he can claim his funds by clicking the button in the top-
 - [node.js](https://nodejs.org/)
 - [web3.js](https://web3js.readthedocs.io/)
 - [react.js](https://reactjs.org/)
+- [MetaMask](https://metamask.io/)
 - [IPFS](https://ipfs.io/)

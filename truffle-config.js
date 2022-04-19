@@ -21,6 +21,11 @@ module.exports = {
       gas: 5000000,
       gasPrice: 25000000000,
       network_id: 4
+    },
+    aws_managed_blockchain: {
+      host: "<YOUR_AMB_ENDPOINT>",
+      port: 8545,
+      network_id: "*" //match any network id
     }
   },
   contracts_directory: './src/contracts',
