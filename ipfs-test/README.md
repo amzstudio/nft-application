@@ -13,7 +13,7 @@ $ ipfs deamon
 
 Finally, you have to execute below:
 ```
-$ cd ipfs-app
+$ cd ipfs-test
 $ node app.js
 ```
 Please open your webpage : http://localhost:3000/
