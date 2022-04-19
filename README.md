@@ -194,4 +194,4 @@ If a user sold an NFT, he can claim his funds by clicking the button in the top-
 - [MetaMask](https://metamask.io/)
 - [IPFS](https://ipfs.io/)
 
-(* orginal github : https://github.com/miquelTC/nft-marketplac)
+(* orginal github : https://github.com/miquelTC/nft-marketplace)
