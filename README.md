@@ -4,8 +4,7 @@
 
 This is an open decentralized NFT Marketplace built with smart contracts powered by Ethereum. It basically consists in an open platform where each user can mint his own NFT and expose it on a marketplace.
 
-![NFT_MARKETPLACE_SELLER](img/nft_marketplace_seller.png)
-![NFT_MARKETPLACE_BUYER](img/nft_marketplace_buyer.png)
+![NFT_MARKETPLACE](img/nft_marketplace.png)
 
 ## Table of Contents
 
