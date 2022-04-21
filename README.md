@@ -102,7 +102,7 @@ https://docs.ipfs.io/install/command-line/
 
 ```
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
-$ ipfs deamon
+$ ipfs daemon
 ```
 
 ### 7. Opening the User Interface

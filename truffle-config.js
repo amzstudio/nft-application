@@ -23,7 +23,7 @@ module.exports = {
       network_id: 4
     },
     aws_managed_blockchain: {
-      host: "<YOUR_AMB_ENDPOINT>",
+      host: "<YOUR_APIGW_ENDPOINT>",
       port: 8545,
       network_id: "*" //match any network id
     }
