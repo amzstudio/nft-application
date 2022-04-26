@@ -8,7 +8,7 @@ You need to install IPFS, a distributed file storage locally:
 https://docs.ipfs.io/install/command-line/
 ```
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
-$ ipfs deamon
+$ ipfs daemon
 ```
 
 Finally, you have to execute below:
