@@ -101,6 +101,8 @@ It's almost over. You need to install IPFS, a distributed file storage locally:
 https://docs.ipfs.io/install/command-line/
 
 ```
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["webui://-", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST"]'
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
 $ ipfs daemon
 ```

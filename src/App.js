@@ -9,6 +9,7 @@ import MarketplaceContext from './store/marketplace-context'
 import NFTCollection from './abis/NFTCollection.json';
 import NFTMarketplace from './abis/NFTMarketplace.json';
 
+
 const App = () => {
   const web3Ctx = useContext(Web3Context);
   const collectionCtx = useContext(CollectionContext);

@@ -65,13 +65,13 @@ const NFTCollection = () => {
         const index = marketplaceCtx.offers ? marketplaceCtx.offers.findIndex(offer => offer.id === NFT.id) : -1;
         const owner = index === -1 ? NFT.owner : marketplaceCtx.offers[index].user;
         const price = index !== -1 ? formatPrice(marketplaceCtx.offers[index].price).toFixed(2) : null;
-        console.log(NFT)
+
         return(
           <div key={key} className="col-md-2 m-3 pb-3 card border-info">
             <div className={"card-body"}>       
               <h5 className="card-title">{NFT.title}</h5>
             </div>
-            <img src={`http://ipfs.localhost:8081/ipfs/${NFT.img}`} className="card-img-bottom" alt={`NFT ${key}`} />
+            <img src={`http://ipfs.localhost:8080/ipfs/${NFT.img}`} className="card-img-bottom" alt={`NFT ${key}`} />
             <p className="fw-light fs-6">{`${owner.substr(0,7)}...${owner.substr(owner.length - 7)}`}</p>
             {index !== -1 ?
               owner !== web3Ctx.account ?
