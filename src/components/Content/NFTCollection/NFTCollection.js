@@ -1,4 +1,4 @@
-import { useContext, useRef, createRef } from 'react';
+import { useContext, useState, useRef, createRef } from 'react';
 
 import web3 from '../../../connection/web3';
 import Web3Context from '../../../store/web3-context';
@@ -58,7 +58,7 @@ const NFTCollection = () => {
       marketplaceCtx.setMktIsLoading(false);
     });    
   };
- 
+
   return(
     <div className="row text-center">
       {collectionCtx.collection.map((NFT, key) => {
@@ -69,15 +69,20 @@ const NFTCollection = () => {
         return(
           <div key={key} className="col-md-2 m-3 pb-3 card border-info">
             <div className={"card-body"}>       
-              <h5 className="card-title">{NFT.title}</h5>
+              <h5 className="card-title">NFT ID : {NFT.id}</h5>
             </div>
-            <img src={`http://ipfs.localhost:8080/ipfs/${NFT.img}`} className="card-img-bottom" alt={`NFT ${key}`} />
-            <p className="fw-light fs-6">{`${owner.substr(0,7)}...${owner.substr(owner.length - 7)}`}</p>
+            <img src={`http://ipfs.localhost:8080/ipfs/${NFT.img}`} className="card-img-bottom align-content-center" alt={`NFT ${key}`} onClickCapture={11}/>
+            <p className="fw-light fs-6">
+              <div className="figure-caption col-10 p-1">▶︎ Image Path</div>
+              <div className="figure-caption col-10 ">  {NFT.img}  </div>
+              <div className="figure-caption col-10 p-1">▶︎ Owner </div>
+              <div className="figure-caption col-10 ">   {`${owner.substr(0,9)}...${owner.substr(owner.length - 9)}`}  </div>
+            </p>
             {index !== -1 ?
               owner !== web3Ctx.account ?
                 <div className="row">
                   <div className="d-grid gap-2 col-5 mx-auto">
-                    <button onClick={buyHandler} value={index} className="btn btn-success">BUY</button>
+                    <button onClick={buyHandler} value={index} className="btn btn-success" >BUY</button>
                   </div>
                   <div className="col-7 d-flex justify-content-end">
                     <img src={eth} width="25" height="25" className="align-center float-start" alt="price icon"></img>                
@@ -93,8 +98,8 @@ const NFTCollection = () => {
                     <p className="text-start"><b>{`${price}`}</b></p>
                   </div>
                 </div> :
-              owner === web3Ctx.account ?              
-                <form className="row g-2" onSubmit={(e) => makeOfferHandler(e, NFT.id, key)}>                
+              owner === web3Ctx.account ?
+                <form className="row g-2" onSubmit={(e) => makeOfferHandler(e, NFT.id, key)}>
                   <div className="col-5 d-grid gap-2">
                     <button type="submit" className="btn btn-secondary">OFFER</button>
                   </div>
@@ -106,9 +111,12 @@ const NFTCollection = () => {
                       className="form-control"
                       ref={priceRefs.current[key]}
                     />
-                  </div>                                  
+                  </div>
+
                 </form> :
-                <p><br/></p>}
+                <p><br/></p>
+            }
+
           </div>
         );
       })}
