@@ -14,7 +14,7 @@ $ ipfs daemon
 Finally, you have to execute below:
 ```
 $ cd ipfs-test
-$ npm i express-fileupload
+$ npm install
 $ node app.js
 ```
 Please open your webpage : http://localhost:3001/
