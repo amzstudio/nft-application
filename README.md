@@ -51,7 +51,10 @@ npm install -g web3
 nvm install 16.14.2
 npm cache clean --force
 npm uninstall -g truffle
-npm install -g truffle 
+npm install -g truffle@5.5.10 
+
+npm uninstall -g web3
+npm install -g weg3@1.7.3
 ```
 
 ### 3. Installing Ganache (Ethereum TestBed)
