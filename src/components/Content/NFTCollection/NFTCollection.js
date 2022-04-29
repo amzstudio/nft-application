@@ -69,14 +69,19 @@ const NFTCollection = () => {
         return(
           <div key={key} className="col-md-2 m-3 pb-3 card border-info">
             <div className={"card-body"}>       
-              <h5 className="card-title">NFT ID : {NFT.id}</h5>
+              <h5 className="card-title">{NFT.title}</h5>
             </div>
-            <img src={`http://ipfs.localhost:8080/ipfs/${NFT.img}`} className="card-img-bottom align-content-center" alt={`NFT ${key}`} onClickCapture={11}/>
+            <img src={`http://ipfs.localhost:8080/ipfs/${NFT.img}`} className="card-img-bottom align-content-center" alt={`NFT ${key}`}
+                 onClick={(e) => {
+                   e.preventDefault();
+                   window.open("http://localhost:3000/win.html?hash=" + `${NFT.img}` + "&owner=" + `${owner}`+ "&tid=" + `${NFT.id}`, '_new')
+                 }}
+            />
             <p className="fw-light fs-6">
-              <div className="figure-caption col-10 p-1">▶︎ Image Path</div>
-              <div className="figure-caption col-10 ">  {NFT.img}  </div>
-              <div className="figure-caption col-10 p-1">▶︎ Owner </div>
-              <div className="figure-caption col-10 ">   {`${owner.substr(0,9)}...${owner.substr(owner.length - 9)}`}  </div>
+              {/*<div className="figure-caption col-10 p-1">▶︎ Image Path</div>*/}
+              {/*<div className="figure-caption col-10 ">  {NFT.img}  </div>*/}
+              {/*<div className="figure-caption col-10 p-1">▶︎ Owner </div>*/}
+              <div className="fw-light fs-6">   {`${owner.substr(0,7)}...${owner.substr(owner.length - 7)}`}  </div>
             </p>
             {index !== -1 ?
               owner !== web3Ctx.account ?

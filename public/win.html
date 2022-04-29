@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Contact us Form | CodingNepal</title>
+    <link rel="stylesheet" href="win.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        var _value="";
+        window.onload = function()
+        {
+            var url = unescape(location.href);
+            var pm  = url.split('?');
+
+            var params   = pm[1].split('&');
+            var param0 = params[0].split('=');
+            var hash = param0[1];
+            var param1 = params[1].split('=');
+            var owner = param1[1];
+            var param2 = params[2].split('=');
+            var tid = param2[1];
+
+            document.getElementById("owner").value = owner;
+            document.getElementById("hash").value = hash;
+            document.getElementById("tid").value = tid;
+        }
+    </script>
+
+
+</head>
+<body>
+<script>
+    function setAction(form) {
+        var hash = document.getElementById("hash").value
+        var tid = document.getElementById("tid").value
+
+        const arr = hash.match(/\d/g);
+        const result = arr.join("");
+        const number = 100 // 인원수
+        const result2 = (parseInt(result)+ tid)  % parseInt(number) + 1
+
+        const dsc = "( ( "+ result + "+" + tid + " )"  + " % " + number +  " )" + " + 1 = " + result2
+        this.document.getElementById("tt").style.display="none"
+        this.document.getElementById("win").innerHTML = result2 ;
+
+        this.document.getElementById("dsc").innerHTML = dsc ;
+    }
+</script>
+<div class="container">
+    <div class="text">NFT Scanner</div>
+
+    <div id="tt">
+        <form onsubmit="setAction(this);return false">
+            <div class="form-row" >
+                <div class="input-data">
+                    <input type="text" name="owner" id="tid" required>
+                    <div class="underline"></div>
+                    <label for="">Token ID</label>
+                </div>
+                <div class="input-data"></div>
+            </div>
+
+            <div class="form-row" >
+                <div class="input-data">
+                    <input type="text" name="owner" id="owner" required>
+                    <div class="underline"></div>
+                    <label for="">Owner Address</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea name="hash" id="hash" rows="8" cols="80" required ></textarea>
+                    <div class="underline"></div>
+                    <label for="">File Meta Hash</label>
+                    <br />
+                    <div class="form-row submit-btn">
+                        <div class="input-data" id="btn">
+                            <div class="inner"></div>
+                            <input type="submit" name="submit"/>>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="text2" id="win"></div>
+    <div class="text3" id="dsc"></div>
+</div>
+</body>
+</html>
