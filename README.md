@@ -58,7 +58,7 @@ truffle version
 : Truffle v5.5.10 (core: 5.5.10), 
 Ganache v^7.0.3,
 Solidity - ^0.8.0 (solc-js),
-Node v17.9.0,
+Node v14.17.3,
 Web3.js v1.5.3
 
 
