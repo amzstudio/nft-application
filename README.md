@@ -39,7 +39,8 @@ $ npm install
 Then, you will need to install Truffle globally by running the following command int your terminal:
 
 ```
-$ npm install -g truffle 
+npm install -g truffle 
+npm install -g web3 
 ```
 
 [optional] when you meet 'NPM ERR!', please execute below.
@@ -65,20 +66,20 @@ https://www.trufflesuite.com/ganache
 First, you will have to compile the smart contracts by running the following command in your terminal:
 
 ```
-$ truffle compile
+truffle compile
 ```
 
 Then, the tests that validate your solution can be executed by runing the following
 command:
 
 ```
-$ truffle test
+truffle test
 ```
 
 Deploy the contracts on your Ganache local blockchain by running the following command:
 
 ```
-$ truffle migrate
+truffle migrate
 ```
 
 ### 5. Installing User Wallet (Metamask)
@@ -101,17 +102,17 @@ It's almost over. You need to install IPFS, a distributed file storage locally:
 https://docs.ipfs.io/install/command-line/
 
 ```
-$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["webui://-", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
-$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST"]'
-$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
-$ ipfs daemon
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["webui://-", "http://localhost:3000", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"*\"]"
+ipfs daemon
 ```
 
 ### 7. Opening the User Interface
 Finally, you just need to run the following command in your terminal to open the User Interface:
 
 ```
-$ npm start
+npm start
 ```
 
 ### 8. Deployment on Public Network
@@ -124,9 +125,9 @@ In order to deploy your smart contract, you must create your .env file and speci
 Then, you will need to run the following command (let's use the testnet Ropsten in this example, remember to request some Ether for your account using a faucet):
 
 ```
-$ truffle migrate --network ropsten 
+truffle migrate --network ropsten 
 or
-$ truffle migrate --network aws_managed_blockchain
+truffle migrate --network aws_managed_blockchain
 ```
 
 Finally you can run the following command to generate the build artifacts of your User Interface and then deploy to your favourite host:
